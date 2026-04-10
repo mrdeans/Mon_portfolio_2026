@@ -199,3 +199,331 @@ footer a:hover{
     color: var(--orange-vif);
     transform: translateY(-3px);
 }
+/* --- Page Contact --- */
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4rem;
+    max-width: 1000px;
+    margin: 6rem auto;
+    padding: 0 2rem;
+}
+
+.contact-info {
+    flex: 1;
+    text-align: left;
+}
+
+.contact-info h2 {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.contact-info h2::after {
+    margin: 1.2rem 0; /* Aligne la barre violette à gauche */
+}
+
+.contact-details {
+    margin-top: 2rem;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    color: var(--gris-fonce);
+}
+
+.detail-item i {
+    color: var(--violet-doux);
+    font-size: 1.5rem;
+}
+
+.detail-item a {
+    text-decoration: none;
+    color: var(--gris-fonce);
+    font-weight: 600;
+}
+
+/* Boutons WhatsApp & Telegram */
+.social-apps {
+    display: flex;
+    gap: 15px;
+    margin-top: 2rem;
+}
+
+.social-apps a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: opacity 0.3s ease;
+}
+
+.whatsapp { background-color: #25D366; }
+.telegram { background-color: #0088cc; }
+
+.social-apps a:hover {
+    opacity: 0.8;
+}
+
+/* Styles du Formulaire */
+.contact-form {
+    flex: 1;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--gris-tres-fonce);
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid var(--gris-clair);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--violet-doux);
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: var(--violet-doux);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: var(--violet-fonce);
+}
+
+/* Responsivité pour mobile */
+@media (max-width: 768px) {
+}
+    .contact-container {
+        flex-direction: column;
+        margin: 3rem auto;
+    }
+    .social-apps {
+        flex-direction: column;
+    }
+.passion {
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.passion h2 {
+  color: var(--violet-doux);
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.passion p {
+  color: var(--gris-fonce);
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+}
+
+.passion-grid 
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+ .passion-card {
+  background: linear-gradient(135deg, var(--violet-doux), var(--violet-fonce));
+  color: white;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.passion-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+.passion-card .icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--orange-vif);
+}
+
+.passion-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.passion-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.divertissement {
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.divertissement h2 {
+  color: var(--violet-doux);
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.divertissement p {
+  color: var(--gris-fonce);
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+}
+
+.div-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.div-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.div-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.div-card i {
+  font-size: 2.5rem;
+  color: var(--violet-doux);
+  margin-bottom: 1rem;
+}
+
+.div-card h3 {
+  color: var(--violet-fonce);
+  margin-bottom: 0.8rem;
+}
+
+.div-card p {
+  color: var(--gris-fonce);
+  font-size: 1rem;
+}
+/* --- Styles spécifiques à la page Projets --- */
+
+.projets-section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.projets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    max-width: 1100px;
+    margin: 2rem auto;
+}
+
+.projet-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.projet-card:hover {
+    transform: translateY(-10px);
+}
+
+.projet-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.projet-content {
+    padding: 1.5rem;
+}
+
+.projet-content h3 {
+    color: var(--violet-doux);
+    margin-bottom: 0.8rem;
+}
+
+.projet-content p {
+    font-size: 0.95rem;
+    color: var(--gris-fonce);
+    margin-bottom: 1.2rem;
+}
+
+.tags {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.tag {
+    background-color: var(--gris-tres-clair);
+    color: var(--violet-doux);
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: 1px solid var(--gris-clair);
+}
+
+.projet-links {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--gris-clair);
+    padding-top: 1rem;
+}
+
+.projet-links a {
+    text-decoration: none;
+    color: var(--gris-tres-fonce);
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.projet-links a:hover {
+    color: var(--violet-doux);
+}
